@@ -8,5 +8,5 @@
   },
   "repository": "https://github.com/andresgz/ceo",
   "keywords": ["ceo", "clickup", "routines", "swapps"],
-  "skills": "./skills/"
+  "skills": "./.claude/skills/"
 }

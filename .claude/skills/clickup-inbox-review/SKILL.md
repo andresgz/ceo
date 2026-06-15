@@ -11,7 +11,7 @@ actually needs his reply/decision**, or confirm he's **up to date**. Runs two wa
 - **Interactive** — he asks for the review in a Claude session; this skill drives it.
 - **Scheduled (routine)** — a Claude Desktop / cloud routine runs it daily and drops the
   result in ClickUp. The paste-ready routine prompt is
-  [`prompts/clickup-inbox-review.md`](../../prompts/clickup-inbox-review.md) (kept in sync
+  [`prompts/clickup-inbox-review.md`](../../../prompts/clickup-inbox-review.md) (kept in sync
   with this skill).
 
 > Cloud/Desktop routines run **isolated** and can only use MCP connectors enabled in the

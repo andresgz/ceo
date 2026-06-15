@@ -31,13 +31,19 @@ Local testing before pushing:
 ceo/
 ├── .claude-plugin/
 │   ├── marketplace.json      # marketplace "ceo" → plugin "ceo" (source ".")
-│   └── plugin.json           # plugin "ceo"; skills auto-discovered under ./skills/
-├── skills/
-│   └── <skill>/SKILL.md      # one folder per CEO skill (invoked as ceo:<skill>)
-├── prompts/                  # paste-ready prompts for Claude Desktop routines (NOT loaded
-│   └── <skill>.md            #   as skills; resources referenced by the skill docs)
+│   └── plugin.json           # plugin "ceo"; skills path → ./.claude/skills/
+├── .claude/
+│   └── skills/
+│       └── <skill>/SKILL.md  # one folder per CEO skill — SINGLE source of truth
+├── prompts/                  # paste-ready prompts for cloud/Desktop routines (resources,
+│   └── <skill>.md            #   NOT loaded as skills)
 └── README.md
 ```
+
+The skills live under `.claude/skills/` (not `skills/`) on purpose — that's the **only**
+location a **cloud routine** discovers them when it clones this repo as a source. The
+plugin's `skills` path in `plugin.json` points at the same folder, so local install still
+exposes them namespaced as `ceo:<skill>`. One copy, both paths.
 
 ## Routines (Claude Desktop)
 
@@ -48,7 +54,7 @@ the **ClickUp MCP connector** enabled there.
 
 ## Adding a new CEO skill
 
-1. `skills/<new-skill>/SKILL.md` with frontmatter `name` + `description`.
+1. `.claude/skills/<new-skill>/SKILL.md` with frontmatter `name` + `description`.
 2. If it will be scheduled, add `prompts/<new-skill>.md` with the routine prompt + config.
 3. Add a row to the Skills table above. Bump `version` in `.claude-plugin/plugin.json`.
 4. `/reload-plugins` (or reinstall) to pick it up.
