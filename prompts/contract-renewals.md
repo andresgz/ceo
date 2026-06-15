@@ -7,11 +7,11 @@ Contraparte programada del skill `ceo:contract-renewals`.
 - **Source repo:** `andresgz/ceo` (GitHub conectado vía `/web-setup`).
 - **Connectors:** swapps-app + ClickUp.
 - **Modelo:** Sonnet 4.6.
-- **Destino:** canal CEO Briefings (`<CEO_BRIEFINGS_CHANNEL_ID>`).
+- **Destino:** canal CEO Briefings (`6-901417284384-8`).
 
 ## Prompt (routine en la nube — llama la skill)
 ```
-Ejecuta la skill "contract-renewals" de este repositorio (.claude/skills/contract-renewals/SKILL.md) usando los MCP de swapps-app (contratos) y ClickUp. Es recommend-only: no edites contratos ni envíes notificaciones. Deja UN solo digest en el canal CEO Briefings (<CEO_BRIEFINGS_CHANNEL_ID>): contratos que vencen o auto-renuevan en ≤60-90 días, con la acción pendiente y el incremento sugerido (IPC + delta); o "✅ Sin renovaciones próximas".
+Ejecuta la skill "contract-renewals" de este repositorio (.claude/skills/contract-renewals/SKILL.md) usando los MCP de swapps-app (contratos) y ClickUp. Es recommend-only: no edites contratos ni envíes notificaciones. Deja UN solo digest en el canal CEO Briefings (6-901417284384-8): contratos que vencen o auto-renuevan en ≤60-90 días, con la acción pendiente y el incremento sugerido (IPC + delta); o "✅ Sin renovaciones próximas".
 ```
 
 ## Desktop (sin soporte de skills)

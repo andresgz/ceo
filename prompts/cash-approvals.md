@@ -7,11 +7,11 @@ Contraparte programada del skill `ceo:cash-approvals`.
 - **Source repo:** `andresgz/ceo` (GitHub conectado vía `/web-setup`).
 - **Connectors:** Jeeves + QuickBooks + ClickUp (habilitados en claude.ai/customize/connectors).
 - **Modelo:** Sonnet 4.6.
-- **Destino:** canal CEO Briefings (`<CEO_BRIEFINGS_CHANNEL_ID>`).
+- **Destino:** canal CEO Briefings (`6-901417284384-8`).
 
 ## Prompt (routine en la nube — llama la skill)
 ```
-Ejecuta la skill "cash-approvals" de este repositorio (.claude/skills/cash-approvals/SKILL.md) usando los MCP de Jeeves, QuickBooks y ClickUp. Es read-only: no apruebes, pagues ni crees nada. Deja UN solo digest en el canal CEO Briefings (<CEO_BRIEFINGS_CHANNEL_ID>): aprobaciones pendientes primero, luego cuentas por cobrar/pagar vencidas y alertas de saldo; o "✅ Finanzas al día" si no hay nada.
+Ejecuta la skill "cash-approvals" de este repositorio (.claude/skills/cash-approvals/SKILL.md) usando los MCP de Jeeves, QuickBooks y ClickUp. Es read-only: no apruebes, pagues ni crees nada. Deja UN solo digest en el canal CEO Briefings (6-901417284384-8): aprobaciones pendientes primero, luego cuentas por cobrar/pagar vencidas y alertas de saldo; o "✅ Finanzas al día" si no hay nada.
 ```
 
 ## Desktop (sin soporte de skills)

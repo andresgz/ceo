@@ -32,7 +32,7 @@ For each: deal name, current status, days stuck, and the concrete next action (a
 ## Output
 
 One message via `clickup_send_chat_message` to the **CEO Briefings** channel
-(`<CEO_BRIEFINGS_CHANNEL_ID>`), `text/md`. Nothing blocked → `✅ Pipeline al día`. Otherwise
+(`6-901417284384-8`), `text/md`. Nothing blocked → `✅ Pipeline al día`. Otherwise
 a prioritized list (closing-stage deals first, then follow-ups, then intake). Concise.
 
 ## Schedule

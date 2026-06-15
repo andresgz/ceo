@@ -35,7 +35,7 @@ the data — do not hardcode account lists.
 ## Output
 
 One message via `clickup_send_chat_message` to the **CEO Briefings** channel
-(`<CEO_BRIEFINGS_CHANNEL_ID>`), `text/md`. None upcoming → `✅ Sin renovaciones próximas`.
+(`6-901417284384-8`), `text/md`. None upcoming → `✅ Sin renovaciones próximas`.
 Otherwise one line per contract, soonest-expiry first. Concise.
 
 ## Schedule

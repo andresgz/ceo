@@ -29,9 +29,8 @@ Local testing before pushing:
 | `ceo:contract-renewals` | weekly (Mon) | swapps-app, ClickUp | Contracts nearing expiry/renewal + action and suggested price increase. |
 | `ceo:monthly-scorecard` | monthly (1st) | google, Google Ads, QuickBooks, swapps-app, ClickUp | One-page month-over-month read: web/leads, ads, pipeline, finance, MRR. |
 
-All skills are **read-only** (surface/recommend; never act for him) and post one digest to a
-dedicated private ClickUp **CEO Briefings** channel. Create that channel once and replace
-`<CEO_BRIEFINGS_CHANNEL_ID>` in each SKILL.md + prompt with its id.
+All skills are **read-only** (surface/recommend; never act for him) and post one digest to
+the private ClickUp **CEO Briefings** channel `6-901417284384-8`.
 
 ## Layout
 

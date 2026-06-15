@@ -37,7 +37,7 @@ anything — only report.
 ## Output
 
 One message via `clickup_send_chat_message` to the **CEO Briefings** channel
-(`<CEO_BRIEFINGS_CHANNEL_ID>`), `text/md`. Nothing pending and cash healthy →
+(`6-901417284384-8`), `text/md`. Nothing pending and cash healthy →
 `✅ Finanzas al día — sin aprobaciones pendientes (<fecha>)`. Otherwise a short prioritized
 list: approvals first (with $), then overdue AR/AP, then alerts. Be concise; no raw dumps.
 

@@ -28,7 +28,7 @@ opening five tools. **Read-only**: gather and summarize, change nothing.
 ## Output
 
 One message via `clickup_send_chat_message` to the **CEO Briefings** channel
-(`<CEO_BRIEFINGS_CHANNEL_ID>`), `text/md`: a compact scorecard grouped by the 6 areas with
+(`6-901417284384-8`), `text/md`: a compact scorecard grouped by the 6 areas with
 MoM deltas, ending with **1–3 callouts** (what's improving, what to watch). If a connector
 is unavailable, include the rest and note the gap rather than failing.
 
