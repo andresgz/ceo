@@ -21,9 +21,17 @@ Local testing before pushing:
 
 ## Skills
 
-| Skill | What it does |
-| --- | --- |
-| `ceo:clickup-inbox-review` | Triage ClickUp DMs + work channels + active-task comments; surface only what needs Andrés's reply/decision, or confirm he's up to date. Read-only. |
+| Skill | Cadence | Connectors | What it does |
+| --- | --- | --- | --- |
+| `ceo:clickup-inbox-review` | daily | ClickUp | Triage DMs + work channels + active-task comments; surface only what needs Andrés's reply/decision, or "up to date". |
+| `ceo:cash-approvals` | daily (L–V) | Jeeves, QuickBooks, ClickUp | Payments/invoices awaiting his approval, balances, due dates, overdue AR/AP. |
+| `ceo:deals-pipeline` | daily (L–V) | ClickUp | Deals blocked on him: proposals without follow-up, verbally-approved unsigned, stale quotes. |
+| `ceo:contract-renewals` | weekly (Mon) | swapps-app, ClickUp | Contracts nearing expiry/renewal + action and suggested price increase. |
+| `ceo:monthly-scorecard` | monthly (1st) | google, Google Ads, QuickBooks, swapps-app, ClickUp | One-page month-over-month read: web/leads, ads, pipeline, finance, MRR. |
+
+All skills are **read-only** (surface/recommend; never act for him) and post one digest to a
+dedicated private ClickUp **CEO Briefings** channel. Create that channel once and replace
+`<CEO_BRIEFINGS_CHANNEL_ID>` in each SKILL.md + prompt with its id.
 
 ## Layout
 
