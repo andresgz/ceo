@@ -1,0 +1,12 @@
+{
+  "name": "ceo",
+  "version": "0.1.0",
+  "description": "CEO operational skills for Andrés (Swapps): daily ClickUp inbox/comments review, and a growing set of CEO recurring-task skills plus the Claude Desktop routine prompts behind them.",
+  "author": {
+    "name": "Andrés González",
+    "email": "andres@swapps.com"
+  },
+  "repository": "https://github.com/andresgz/ceo",
+  "keywords": ["ceo", "clickup", "routines", "swapps"],
+  "skills": "./skills/"
+}

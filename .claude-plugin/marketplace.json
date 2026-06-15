@@ -1,0 +1,15 @@
+{
+  "name": "ceo",
+  "owner": {
+    "name": "Andrés González",
+    "email": "andres@swapps.com"
+  },
+  "description": "CEO operational skills for Andrés (Swapps) — recurring reviews, triage, and the routine prompts behind them.",
+  "plugins": [
+    {
+      "name": "ceo",
+      "source": "./",
+      "description": "CEO operational skills: daily ClickUp inbox/comments review, and a growing set of CEO recurring-task skills."
+    }
+  ]
+}
