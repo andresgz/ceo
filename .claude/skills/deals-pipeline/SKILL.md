@@ -1,6 +1,6 @@
 ---
 name: deals-pipeline
-description: Daily sales-pipeline review for Andrés (Swapps) — deals/opportunities waiting on HIM (proposals sent with no follow-up, verbally-approved without a signed contract, stale quotes, deals stuck), from the ClickUp Deals list + quoting tasks. Recommend-only; never changes deals. Posts one digest to the CEO Briefings channel.
+description: Daily sales-pipeline review for Andrés (Swapps) — deals/opportunities waiting on HIM (proposals sent with no follow-up, verbally-approved without a signed contract, stale quotes, deals stuck), from the Pipedrive CRM + the ClickUp Deals mirror. Recommend-only; never changes deals. Posts one digest to the CEO Briefings channel.
 ---
 
 # deals-pipeline
@@ -8,15 +8,24 @@ description: Daily sales-pipeline review for Andrés (Swapps) — deals/opportun
 Daily look at the sales pipeline to surface **deals that are blocked on Andrés** so nothing
 goes cold. **Recommend-only**: never change statuses, send proposals, or edit tasks.
 
-> Cloud routines need the **ClickUp** MCP connector enabled. If a Pipedrive MCP/connector
-> is available, use it too; otherwise rely on the ClickUp Deals mirror.
+> Cloud routines need the **pipedrive** and **ClickUp** MCP connectors enabled. Pipedrive
+> is the upstream CRM (source of truth for deals); the ClickUp Deals list mirrors it and
+> may lag. Read both, **read-only**.
 
 ## What to pull
 
-ClickUp **Deals** list id `901405812778`:
+**Pipedrive (CRM — source of truth), read-only:**
+- `list_deals` / `search_deals` — open deals by stage and value.
+- `list_activities` — next/overdue activity per deal → a deal with **no next activity
+  scheduled** is the classic "blocked / going cold" signal.
+- `get_deal` — full context for the stuck/ambiguous ones (owner, stage, last update).
+- `list_pipelines` / `list_stages` — to read stage names if needed.
+
+**ClickUp Deals** list id `901405812778` (mirror — cross-check):
 - `clickup_filter_tasks` (list_ids `["901405812778"]`, order_by `updated`) — scan deals by
   status and tags. Relevant tags: `pipedrive`, `quoting`, `needs-owner`.
 - For ambiguous ones, `clickup_get_task` / `clickup_get_task_comments` for context.
+- If the CRM and the mirror disagree, trust Pipedrive and note the drift.
 
 ## What to surface (priority order)
 
